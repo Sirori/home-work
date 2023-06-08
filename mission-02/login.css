@@ -1,3 +1,4 @@
+/* reset입니다 */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
   font-size: 0.875rem;
 }
 
+/* 회색 구분선과 기본 레이아웃 */
 fieldset {
   border: 0;
   border-bottom: 1px solid #eee;
@@ -15,7 +17,7 @@ fieldset {
   position: relative;
 }
 
-
+/* 로그인창 레이아웃과 디자인 */
 .loginForm_container {
   width: 15.25rem;
   margin: 1rem;
@@ -41,9 +43,10 @@ fieldset {
   margin-bottom: 8px;
 }
 
+/* 아이디와 비밀번호에 p:absolute를 주어 위치 설정 */
 .idInput__input,
 .passwordInput__input {
-  width: 90px;
+  width: 5.625rem;
   border: 1px solid #ccc;
   border-radius: 3px;
   position: absolute;
@@ -58,6 +61,7 @@ fieldset {
   margin-bottom: 4px;
 }
 
+/* button 태그에 absolute 사용 */
 .button {
   position: absolute;
   width: 3.125rem;
@@ -78,6 +82,7 @@ fieldset {
   display: flow-root;
 }
 
+/* 회원가입, id,pw찾기에 float를 사용하여 배치 */
 .signIn {
   list-style: circle;
   float: left;
