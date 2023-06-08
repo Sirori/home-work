@@ -22,6 +22,11 @@
 ## 과제 내용
 <br>
 
+- 마크업 순서는 이미지로 대체.
+
+<img width="453" alt="image" src="https://github.com/Sirori/home-work/assets/116864776/5b15c44b-2b7e-410d-90fe-96b750016ec3">
+
+
 - form 태그를 활용하여 아이디, 비밀번호 입력창과 button을 생성.
 
 
