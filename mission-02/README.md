@@ -8,6 +8,7 @@
   4. 로그인 버튼
   5. 회원가입 및 아이디/비밀번호 찾기 링크<br>
 <br>
+
 - 이미지 assets 없이 모든 디자인을 CSS로 구현.
 
 - 일부 요소의 배치를 position 속성을 활용하여 구현.
@@ -55,6 +56,6 @@
 
 
 
-
+## 완성 이미지
 
 <img width="271" alt="image" src="https://github.com/Sirori/home-work/assets/116864776/a5ecdd83-0000-468f-acac-42a910a516ae">
