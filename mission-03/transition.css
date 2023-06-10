@@ -54,12 +54,6 @@
   transition: all 500ms 500ms;
 }
 
-.siteBox:hover .siteList__item {
-  padding: 0.5rem auto;
-  transition: all 500ms;
-}
-
-
 /* List item 사이 간격 조정 */
 .siteList__item {
   padding: 0.4rem;
