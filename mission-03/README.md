@@ -12,3 +12,4 @@
 ## 과제 내용
 
 - 마크업 순서는 이미지로 대체함.
+<img width="318" alt="스크린샷 2023-06-11 오전 12 01 31" src="https://github.com/Sirori/home-work/assets/116864776/d90f43ec-fa5e-43df-acdd-2588a73b260a">
