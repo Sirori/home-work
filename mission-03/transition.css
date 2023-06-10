@@ -38,21 +38,25 @@
   transition: all 1s;
 }
 
+.siteList {
+  padding-top: 0;
+  transition: all 500ms 1s;
+}
+
 /* siteBox에 hover시 animation */
 .siteBox:hover {
   height: 190px;
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 .siteBox:hover .siteList {
   padding-top: 5%;
-  transition: padding-top 1s 500ms;
+  transition: all 500ms 500ms;
 }
 
 .siteBox:hover .siteList__item {
   padding: 0.5rem auto;
-  transition: all 2s;
-  transition-delay: 1s;
+  transition: all 500ms;
 }
 
 
