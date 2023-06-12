@@ -1,0 +1,91 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+}
+
+.news {
+  position: relative;
+  width: 380px;
+  margin: 30px;
+}
+
+.newsTitle {
+  color: #ED552F;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* 구분선을 주기 위하여 ::after와 positon:absolute를 사용(.news에 relative를 주어 기준을 삼음 */
+.news::after {
+  position: absolute;
+  content: '';
+  background: linear-gradient(to right, #A9A9A9, #FFFFFF);
+  width: 70%;
+  height: 1px;
+  top: 15%;
+  left: 0;
+}
+
+.newsContents {
+  display: grid;
+  grid-template-areas:
+  "img img title title title title"
+  "img img cont cont cont cont"
+  "img img cont cont cont cont"
+  ;
+}
+
+.newsContents__fig img {
+  box-shadow: 0 15px 15px 5px #AAAAAA;
+  margin-bottom: 16px;
+}
+
+/* figcaption의 위치 중앙 정렬 */
+.newsContents__fig figcaption {
+  text-align: center;
+}
+
+/* grid 요소들 레이아웃 */
+.newsContents__fig {
+  grid-area: img;
+  margin-right: 16px;
+}
+
+.newsContents__txt {
+  grid-area: title;
+  margin-bottom: 12px;
+}
+
+.newsContents__contents {
+  grid-area: cont;
+}
+
+
+/* 글자  */
+.newsContents__title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.date, .newsContents__contents {
+  font-weight: 400;
+}
+
+
+/* 더보기 버튼의 위치 조정을 위하여 .news를 기준으로 absolute를 줌, a태그인 것이 티가 잘 나지 않을 것 같아 font-weight도 임의로 두껍게 주었음 */
+.plus {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 600;
+}

@@ -4,24 +4,27 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./gird.css" />
   <title>04_grid 과제</title>
 </head>
 <body>
   <section class="news">
     <h2 class="newsTitle">새소식</h2>
     <div class="newsContents">
-      <figure>
+      <figure class="newsContents__fig">
         <img src="./img/news.gif" alt="W3C 리뉴얼 홈페이지" />
         <figcaption>W3C 리뉴얼</figcaption>
       </figure>
-      <div class="newsContents__desc">
-        <h3 class="newsContents__title"><a href="/">W3C 사이트가 리뉴얼 되었습니다.</a></h3>
-        <span class="date">2022.07.18</span>
+        <div class="newsContents__txt">
+          <h3 class="newsContents__title"><a href="/">W3C 사이트가 리뉴얼 되었습니다.</a></h3>
+          <span class="date">2022.07.18</span>
+        </div>
         <p class="newsContents__contents">
           <a href="/">
           디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.
         </a>
-      </p>
+        </p>
+        <p class="plus"><a href="/">+ 더보기</a></p>
       </div>
     </div>
   </section>
