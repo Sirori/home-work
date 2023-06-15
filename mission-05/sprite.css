@@ -18,6 +18,7 @@
   box-sizing: border-box;
   padding: 0.75rem;
   border: 1px solid #A3A3A3;
+  border-radius: 5px;
   background: linear-gradient(to bottom, #ccc, #eee);
 }
 
@@ -26,39 +27,39 @@
 }
 
 .site__List {
-  padding-left: 1rem;
   list-style: none;
 }
 
 .site__ListItem {
-  margin-top: 0.75rem;
+  margin-top: 0.8rem;
   padding-left: 0.25rem;
+  counter-increment: number;
+  display: block;
+  background: url(./rank.png) no-repeat;
+  background-position: 100%;
 }
 
-.site__ListItem:first-child::marker {
-  content: '1';
-}
-.site__ListItem:nth-child(2)::marker {
-  content: '2';
-}
-.site__ListItem:nth-child(3)::marker {
-  content: '3';
-}
-.site__ListItem:last-child::marker {
-  content: '4';
-}
-
-li.site__ListItem::marker {
-  margin-right: 0.25rem;
-  color: #fff;
-  width: 16px;
-  height: 16px;
+.site__ListItem::before {
+  content: counter(number);
+  padding: 3px 6px;
   background: #A3A3A3;
+  border-radius: 5px;
+  color: #fff;
 }
 
-.plus {
+.site__ListItem:first-child, .site__ListItem:last-child {
+  background-position: 100% -11%;
+}
+
+.site__ListItem:nth-child(3) {
+  background-position: 100% 101%;
+}
+
+.more {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
   font-size: 14px;
+  font-weight: 700;
+  color: green;
 }
