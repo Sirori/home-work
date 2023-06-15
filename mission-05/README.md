@@ -10,7 +10,7 @@
 
 - 마크업 순서는 이미지 파일 첨부
 
-
+![image](https://github.com/Sirori/home-work/assets/116864776/bbcd8520-c962-470f-b43a-b6a5f6210015)
 단, a.more 태그는 가장 마지막에 마크업 하였음.
 
 - 더보기 태그는 왼쪽 위로 올리기 위하여 section에 position: relative를 주고 더보기 a 태그에 position: absolute를 주어 위치를 조정함.
@@ -53,4 +53,6 @@
 
 
 ## 완성 이미지
+
+<img width="303" alt="image" src="https://github.com/Sirori/home-work/assets/116864776/e1a7725b-1d3b-4d66-a5d7-c027432543fb">
 
